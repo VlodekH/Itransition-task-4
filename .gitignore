@@ -3,7 +3,8 @@
 !.env.example
 __pycache__/
 *.py[cod]
-results/
+results/*
+!results/stores.sqlite
 data/*
 .DS_Store
 .venv/
