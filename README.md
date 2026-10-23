@@ -2,7 +2,7 @@
 
 Store analytics for the actual **STORE1–STORE5** inputs. Python/pandas cleans the source files, reconciles customers and computes the metrics. SQLite stores the reproducible result. Streamlit displays separate store views and a single chat for data questions and dashboard commands. OpenAI uses bounded SQL tools; it never receives the complete dataset.
 
-Deadline: **23 October 2026**. Submit a repository URL and a publicly accessible dashboard URL by email to **p.lebedev@itransition.com**. No submission or publication has been performed. The supplied instructions do not require a video for Task #4.
+Deadline: **23 October 2026**. Submit a repository URL and a publicly accessible dashboard URL by email to **p.lebedev@itransition.com**. Code repository: https://github.com/VlodekH/itransition-store-analytics. Public dashboard deployment and email submission are still pending. The supplied instructions do not require a video for Task #4.
 
 ## Run
 
@@ -98,7 +98,7 @@ The model can call `get_database_schema`, `query_database(sql)` and `set_dashboa
 
 Function calling and strict argument schemas follow the [official OpenAI documentation](https://developers.openai.com/api/docs/guides/function-calling). Correct SQL execution does not guarantee correct interpretation of every question. The optional people-name filter uses a documented author-token heuristic and may have false positives/negatives; this is stated in the UI and assistant instructions.
 
-No paid OpenAI request or new automated test suite was run by the engineering agent. Actual pipeline execution checked row/accounting invariants and produced the results above. Vlad manually confirmed that the live chat works. Repository publication and public deployment are still required before submission.
+No paid OpenAI request or new automated test suite was run by the engineering agent. Actual pipeline execution checked row/accounting invariants and produced the results above. Vlad manually confirmed that the live chat works. The public code repository is available; public dashboard deployment and email submission are still required.
 
 ## Deployment preparation
 

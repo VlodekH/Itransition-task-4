@@ -5,7 +5,7 @@ Hello,
 
 Please find my solution to Task 4 DATA below.
 
-Code repository: [REPOSITORY_URL]
+Code repository: https://github.com/VlodekH/itransition-store-analytics
 Dashboard with store analytics and AI chat: [DASHBOARD_URL]
 
 The solution processes STORE1–STORE5 independently. Each store view contains the top five revenue days, real unique customer count, unique author-set count, most popular author set, best buyer's user IDs and aliases, and a daily revenue chart.
