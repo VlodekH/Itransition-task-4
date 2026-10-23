@@ -1,0 +1,17 @@
+To: p.lebedev@itransition.com
+Subject: Task 4 DATA — group #145 — Vladzimir Hromenkov
+
+Hello,
+
+Please find my solution to Task 4 DATA below.
+
+Code repository: [REPOSITORY_URL]
+Dashboard with store analytics and AI chat: [DASHBOARD_URL]
+
+The solution processes STORE1–STORE5 independently. Each store view contains the top five revenue days, real unique customer count, unique author-set count, most popular author set, best buyer's user IDs and aliases, and a daily revenue chart.
+
+Registration email: vladzimir.hromenkov@gmail.com
+Group: #145, Data Engineering (Python)
+
+Best regards,
+Vladzimir Hromenkov
