@@ -16,7 +16,7 @@ FUNCTIONS = {"count", "sum", "total", "avg", "min", "max", "round", "abs", "coal
 
 def connect():
     if not DB_PATH.is_file():
-        raise FileNotFoundError(f"Store database not found: {DB_PATH}. Run: python3 task-04/pipeline.py")
+        raise FileNotFoundError(f"Store database not found: {DB_PATH}. Run: python3 pipeline.py")
     connection = sqlite3.connect(DB_PATH.resolve().as_uri() + "?mode=ro", uri=True, timeout=3)
     connection.row_factory = sqlite3.Row
     connection.execute("PRAGMA query_only=ON")

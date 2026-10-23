@@ -92,7 +92,7 @@ def validate_state(arguments, context):
 
 def run_agent(prompt, context=None, history=None):
     if not is_configured():
-        raise RuntimeError("Add OPENAI_API_KEY to task-04/.env and restart the application")
+        raise RuntimeError("Add OPENAI_API_KEY to .env and restart the application")
     context = context or {"active_store": store_names()[0]}
     schema = database_schema()
     instructions = (

@@ -23,7 +23,7 @@ h1,h2,h3 {letter-spacing:-.025em;}
 
 if not DB_PATH.is_file():
     st.title("Store Intelligence")
-    st.info("Prepare the store data first: python3 task-04/pipeline.py")
+    st.info("Prepare the store data first: python3 pipeline.py")
     st.stop()
 
 stores = store_names()
@@ -87,7 +87,7 @@ def cached_store(store, modified):
     return load_store(store)
 
 
-st.caption("ITRANSITION · DATA ENGINEERING / RETAIL ANALYTICS")
+st.caption("RETAIL ANALYTICS")
 st.title("Store Intelligence")
 st.write("Revenue, authors and customers — one store at a time.")
 st.radio("Store", stores, key="active_store", horizontal=True, on_change=store_changed, label_visibility="collapsed")
@@ -219,7 +219,7 @@ st.divider()
 st.subheader("Data assistant")
 st.caption("Ask a question or change this view. For example: ‘Топ-5 самых дорогих книг’ or ‘Покажи заказы STORE2 за июнь 2025’.")
 if not is_configured():
-    st.info("To enable chat, add OPENAI_API_KEY to task-04/.env and restart Streamlit.")
+    st.info("To enable chat, add OPENAI_API_KEY to .env and restart Streamlit.")
 for message in st.session_state.messages[-12:]:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])

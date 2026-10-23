@@ -1,4 +1,4 @@
-"""Local configuration; secrets are read from the environment or task-04/.env."""
+"""Local configuration; secrets are read from the environment or .env."""
 import os
 from pathlib import Path
 

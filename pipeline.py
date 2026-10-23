@@ -347,7 +347,7 @@ def build(data_dir=DATA_DIR, results_dir=RESULTS_DIR, db_path=DB_PATH):
         pending_db.unlink(missing_ok=True)
     report_path = results_dir / "summary.json"
     report_path.write_text(json.dumps(reports, ensure_ascii=False, indent=2), encoding="utf-8")
-    lines = ["Task #4 DATA — calculated values", ""]
+    lines = ["Store analytics — calculated values", ""]
     for report in reports:
         lines.extend([report["store"], f"Unique users: {report['unique_users']}",
                       f"Unique author sets: {report['unique_author_sets']}",

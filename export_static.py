@@ -1,4 +1,4 @@
-"""Export a standalone, browser-readable Part 1 dashboard from real results."""
+"""Export a standalone store analytics dashboard."""
 import base64
 from html import escape
 import json
@@ -47,9 +47,9 @@ h2{font-size:26px;margin:2px 0}h3{font-size:17px;margin:0 0 20px}article{backgro
 img{width:100%;height:auto}table{width:100%;border-collapse:collapse;font-size:14px}td,th{text-align:left;padding:13px 0;border-bottom:1px solid #edf0f3}td:last-child,th:last-child{text-align:right;font-variant-numeric:tabular-nums}
 .featured{font-size:19px;font-weight:600;margin-bottom:8px}code{background:#f1f5f7;padding:6px 10px;border-radius:5px;font-size:15px}.badge{font-size:12px;color:#637687}footer{font-size:12px;color:#637687;margin-top:24px}
 @media(max-width:850px){.metrics{grid-template-columns:repeat(2,1fr)}.revenue,.people{grid-template-columns:1fr}.metrics strong{font-size:24px}article{padding:18px}}
-</style><header><p class="eyebrow">ITRANSITION / DATA ENGINEERING</p><h1>Store Intelligence</h1><p>Revenue, authors and reconciled customers. Every store, independently.</p></header>
+</style><header><p class="eyebrow">RETAIL ANALYTICS</p><h1>Store Intelligence</h1><p>Revenue, authors and reconciled customers. Every store, independently.</p></header>
 <main><nav role="tablist" aria-label="Stores">''' + "".join(tabs) + "</nav>" + "".join(sections) + '''
-<footer>All revenue in USD · EUR 1 = USD 1.2 · Exact cents, rounded per order line · Customer aliases reconciled under the one-changed-field assumption.<br>Part 1 static dashboard. The full Streamlit application adds chat and interactive filters.</footer></main>
+<footer>All revenue in USD · EUR 1 = USD 1.2 · Exact cents, rounded per order line · Customer aliases reconciled under the one-changed-field assumption.<br>Static dashboard. The full Streamlit application adds chat and interactive filters.</footer></main>
 <script>function showStore(index){document.querySelectorAll('[role=tabpanel]').forEach((el,i)=>el.hidden=i!==index);document.querySelectorAll('[role=tab]').forEach((el,i)=>el.setAttribute('aria-selected',String(i===index)));}</script></html>'''
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(html, encoding="utf-8")
